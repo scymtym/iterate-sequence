@@ -1,5 +1,7 @@
 (cl:in-package #:iterate)
 
+(export 'each)
+
 (defmacro-driver (for var each sequence &sequence)
   "TODO"
   (let ((from-var       (gensym "FROM-VAR"))
